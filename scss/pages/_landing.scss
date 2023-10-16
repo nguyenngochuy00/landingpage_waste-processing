@@ -1,0 +1,177 @@
+.wp-landing-dashboard-page {
+    .wp-landing-dashboard-banner {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        padding: 95px 110px 0;
+
+        .wp-landing-dashboard-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            padding: 27px 0;
+
+            .wp-landing-dashboard-desc {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                row-gap: 30px;
+            }
+        }
+
+        .wp-landing-dashboard-img {
+            @include size(416px, 402px);
+        }
+    }
+
+    main {
+        .wp-landing-dashboard-data {
+            padding: 80px 182px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .wp-landing-dashboard-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 10px;
+            }
+        }
+
+        .wp-landing-dashboard-category {
+            padding: 80px 182px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 80px;
+            align-items: center;
+
+            .wp-landing-dashboard-title {
+                text-align: center;
+            }
+
+            .wp-landing-dashboard-content {
+                display: flex;
+                align-items: center;
+                column-gap: 50px;
+
+                .wp-landing-dashboard-item {
+                    @include border-radius(20px);
+                    @include box-shadow(0, 4px, 4px, 0, rgba(0, 0, 0, 0.25));
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 32px;
+                    @include size(328px, 305px);
+                    padding: 40px;
+
+                    img {
+                        @include size(80px);
+                    }
+
+                    .wp-landing-dashboard-desc {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        row-gap: 5px;
+
+                        h6 {
+                            text-align: center;
+                        }
+
+                        .h6-item1 {
+                            padding: 0 34px;
+                        }
+
+                        .h6-item2 {
+                            padding: 0 33px 0 31px;
+                        }
+
+                        .h6-item3 {
+                            padding: 0 32px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .wp-landing-dashboard-topSelling {
+            padding: 80px 182px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 80px;
+
+            .wp-landing-dashboard-title {
+                text-align: center;
+            }
+
+            .wp-landing-dashboard-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                align-content: flex-start;
+                row-gap: 50px;
+                flex-wrap: wrap;
+
+                .wp-landing-dashboard-item {
+                    @include size(333px, 432px);
+                    @include border-radius(20px);
+
+                    .wp-landing-dashboard-desc {
+                        @include size(333px, 99px);
+                        background: $green;
+                        padding: 15px 0 0 24px;
+                        @include border-radius(0, 0, 0, 20px, 20px);
+                        margin-top: -6px;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                    }
+                }
+            }
+        }
+
+        .wp-landing-dashboard-testimonial {
+            padding: 80px 72px;
+            display: flex;
+            align-items: center;
+            column-gap: 24px;
+            @include size(none, 490px);
+
+            .wp-landing-dashboard-title {
+                padding: 0 0 0 110px;
+                @include size(416px, none);
+                position: relative;
+
+                img {
+                    @include size(231px);
+                    position: absolute;
+                    left: 43px;
+                    top: -40.5px;
+                }
+            }
+        }
+
+        .wp-landing-dashboard-partner {
+            padding: 80px 275px;
+            display: flex;
+            align-items: center;
+            column-gap: 80px;
+        }
+
+        .wp-landing-dashboard-maps {
+            padding: 80px 182px;
+            display: flex;
+            column-gap: 24px;
+
+            .wp-landing-dashboard-content {
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                justify-content: flex-end;
+                padding-left: 80px;
+            }
+        }
+    }
+}

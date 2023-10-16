@@ -1,0 +1,27 @@
+// Core
+@import "variable";
+@import "reboot";
+@import "mixin";
+
+// Base
+@import "typography";
+@import "components/button";
+@import "components/form-control";
+@import "components/slide";
+
+// Layouts
+@import "components/header";
+@import "components/footer";
+
+// Pages
+@import "pages/landing";
+@import "pages/dashboard";
+@import "pages/about";
+@import "pages/information";
+@import "pages/course";
+@import "pages/product";
+@import "pages/registration";
+@import 'pages/login';
+@import 'pages/setting';
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");

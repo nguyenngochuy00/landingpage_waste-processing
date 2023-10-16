@@ -1,0 +1,60 @@
+.wp-btn {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    text-decoration: none;
+
+    &.wp-btn-normal {
+        padding: 8px 20px;
+        @include border-radius(10px);
+        @include typo(16px, 600, normal);
+        @include transition();
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &.wp-btn-lg {
+        padding: 11px 40px;
+        @include border-radius(10px);
+        @include typo(20px, 600, normal);
+        @include transition();
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &.wp-btn-social {
+        padding: 10px;
+        @include border-radius(9px);
+        @include typo(12px, 400, normal);
+        @include transition();
+
+        &:hover {
+            border-color: $green;
+        }
+    }
+
+    &.wp-btn-green {
+        background: $green;
+        color: $white;
+    }
+
+    &.wp-btn-transparent {
+        color: $white;
+        border: 2px solid $white;
+        @include transition();
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &.wp-btn-white {
+        @include border(1px, solid, #EAEAEA);
+        background: $white;
+        color: $black;
+    }
+}

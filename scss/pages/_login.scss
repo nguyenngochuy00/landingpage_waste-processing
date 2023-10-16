@@ -1,0 +1,95 @@
+.wp-registration-login-page {
+    padding-top: 50px;
+
+    .wp-registration-login-logo {
+        padding-left: 100px;
+    }
+
+    .wp-registration-login-container {
+        display: flex;
+
+        .wp-registration-login-banner {
+            margin-top: 57px;
+        }
+
+        .wp-login-layout {
+            margin: 41px 72px 136px 94px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+
+            .wp-registration-login-form {
+                padding: 50px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                row-gap: 24px;
+                @include border-radius(20px);
+                @include box-shadow(0px, 0px, 33px, 0px, rgba(0, 0, 0, 0.25));
+                width: 636px;
+
+                form:nth-of-type(n + 1):nth-of-type(-n + 2) {
+                    width: 100%;
+                }
+
+                .wp-login-password {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    
+                    a {
+                        text-decoration: none;
+                        width: 100%;
+                        text-align: right;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+
+                .wp-btn {
+                    width: 250px;
+                    text-align: center;
+                }
+
+                .wp-registration-login-socialBtn {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 24px;
+
+                    button:first-of-type {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 14px;
+                        width: 190px;
+                    }
+
+                    button:last-of-type {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 10px;
+                        width: 190px;
+                    }
+                }
+
+                .wp-registration-login-action {
+                    display: flex;
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 600;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

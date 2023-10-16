@@ -1,0 +1,173 @@
+.h1 {
+    @include typo(48px, 700, 72px);
+
+    &.h1-cream {
+        color: $cream;
+    }
+
+    &.h1-green {
+        color: $green;
+    }
+
+    &.h1-dark {
+        color: $dark;
+    }
+}
+
+.h1-bold {
+    @include typo(48px, 700, normal);
+
+    &.h1-bold-cream {
+        color: $cream;
+    }
+}
+
+.h1-semibold {
+    @include typo(48px, 600, 72px);
+
+    &.h1-semibold-dark {
+        color: $dark;
+    }
+}
+
+.h2 {
+    @include typo(36px, 600, 54px);
+
+    &.h2-dark {
+        color: $dark;
+    }
+}
+
+.h3 {
+    @include typo(28px, 600, 42px);
+
+    &.h3-white {
+        color: $white;
+    }
+
+    &.h3-dark {
+        color: $dark;
+    }
+
+    &.h3-green {
+        color: $green;
+    }
+
+    &.h3-grey {
+        color: $grey;
+    }
+}
+
+.h3-regular {
+    @include typo(28px, 400, 42px);
+
+    &.h3-regular-dark {
+        color: $dark;
+    }
+}
+
+// h5, label
+.h5 {
+    @include typo(20px, 600, 30px);
+
+    &.h5-grey {
+        color: $grey;
+    }
+
+    &.h5-white {
+        color: $white;
+    }
+
+    &.h5-textclr {
+        color: $text-clr;
+    }
+
+    &.h5-dark {
+        color: $dark;
+    }
+}
+
+.h5-regular {
+    @include typo(20px, 400, normal);
+
+    &.h5-regular-green {
+        color: $green;
+    }
+}
+
+.h5-medium {
+    @include typo(20px, 500, normal);
+
+    &.h5-medium-light {
+        color: $light;
+    }
+}
+
+.h5-semibold {
+    @include typo(20px, 600, normal);
+
+    &.h5-semibold-grey {
+        color: $grey;
+    }
+
+    &.h5-semibold-white {
+        color: $white;
+    }
+
+    &.h5-semibold-textclr {
+        color: $text-clr;
+    }
+}
+
+.h6-semibold {
+    @include typo(16px, 600, normal);
+
+    &.h6-semibold-green {
+        color: $green;
+    }
+}
+
+.h6-regular {
+    @include typo(16px, 400, normal);
+
+    &.h6-regular-white {
+        color: $white;
+    }
+
+    &.h6-regular-grey {
+        color: $grey;
+    }
+
+    &.h6-regular-textclr {
+        color: $text-clr;
+    }
+
+    &.h6-regular-light {
+        color: $light;
+    }
+}
+
+.p-body {
+    @include typo(16px, 400, 24px);
+
+    &.p-body-white {
+        color: $white;
+    }
+
+    &.p-body-grey {
+        color: $grey;
+    }
+
+    &.p-body-textclr {
+        color: $text-clr;
+    }
+
+    &.p-body-green {
+        color: $green;
+    }
+
+    &.p-body-dark {
+        color: $dark;
+    }
+}
+

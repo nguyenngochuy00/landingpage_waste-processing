@@ -1,0 +1,113 @@
+footer {
+    background-image: url("../../images/Footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 508px;
+    padding: 250px 72px 68px;
+    display: flex;
+    column-gap: 24px;
+
+    .wp-landing-dashboard-infor {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 515px;
+
+        img {
+            @include size(133px, 40px);
+        }
+    }
+
+    .wp-landing-dashboard-topic {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex: 1 0 0;
+
+        .wp-landing-dashboard-item {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+    
+            .wp-landing-dashboard-links {
+                display: flex;
+                flex-direction: column;
+                row-gap: 24px;
+    
+                &.contact {
+                    row-gap: 21px;
+                }
+    
+                &.app {
+                    row-gap: 15px;
+                }
+    
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+    
+                .wp-landing-dashboard-store {
+                    display: flex;
+                    column-gap: 7px;
+    
+                    a {
+                        @include border-radius(18px);
+                        background: $green;
+                        @include transition();
+
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.2);
+                        }
+                    }
+    
+                    .google-play {
+                        padding: 7px 11px 8px 18px;
+                        @include size(107px, 35px);
+                    }
+    
+                    .app-store {
+                        padding: 9px 10px 9px 17px;
+                        @include size(100px, 35px);
+                    }
+                }
+    
+                .wp-landing-dashboard-social {
+                    display: flex;
+                    column-gap: 25px;
+    
+                    a {
+                        @include border-radius(100px);
+                        background: $green;
+                        display: flex;
+                        align-items: center;
+                        @include transition();
+
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.2);
+                        }
+                    }
+    
+                    .fb {
+                        padding: 16px 12px 12px 18px;
+                        @include size(41px);
+                    }
+    
+                    .ig {
+                        padding: 14px 15px 15px;
+                        @include size(45px);
+                    }
+    
+                    .tw {
+                        padding: 14px 14px 14px 12px;
+                        @include size(41px);
+                    }
+                }
+            }
+        }
+    }
+}

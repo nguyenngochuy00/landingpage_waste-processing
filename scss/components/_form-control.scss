@@ -1,0 +1,45 @@
+.form-control {
+    input {
+        @include border-radius(8px);
+        @include border(2px, solid, $dark);
+        padding: 14px 28px;
+        width: 100%;
+        @include transition();
+
+        &:focus {
+            border-color: $grey;
+        }
+    }
+}
+
+// form-group
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    input {
+        @include border-radius(8px);
+        @include border(2px, solid, $light);
+        @include size(100%, 52px);
+        padding: 14px 27px;
+        @include transition();
+
+        &:focus {
+            border-color: $grey;
+        }
+    }
+}
+
+.form-cbox {
+    display: flex;
+    column-gap: 10px;
+    flex-direction: row;
+    align-items: center;
+
+    input {
+        @include border-radius(1px);
+        @include border(2px, solid, #c1c1c1);
+        @include size(24px);
+    }
+}

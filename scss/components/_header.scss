@@ -1,0 +1,74 @@
+header {
+    background: $green;
+    padding: 50px 72px 120px;
+
+    .wp-navbar {
+        padding: 20px 40px;
+        @include border-radius(20px);
+        background: $white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .wp-navlink {
+            display: flex;
+            align-items: center;
+            column-gap: 52px;
+            list-style-type: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                }
+
+                .active {
+                    @include typo(20px, 600, normal);
+                    color: $green;
+                }
+            }
+
+            li:nth-of-type(n+2):nth-of-type(-n+4) {
+                a {
+                    @include typo(20px, 400, normal);
+                    color: $grey;
+                    @include transition();
+
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+        }
+
+        // ------- //
+        .wp-account {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            .wp-info {
+                display: flex;
+                align-items: center;
+                column-gap: 6px;
+
+                .wp-name {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 1px;
+
+                    p {
+                        color: $grey;
+                    }
+
+                    p:first-of-type {
+                        @include typo(12px, 500, 12px);
+                    }
+
+                    p:last-of-type {
+                        @include typo(16px, 600, 16px);
+                    }
+                }
+            }
+        }
+    }
+}
